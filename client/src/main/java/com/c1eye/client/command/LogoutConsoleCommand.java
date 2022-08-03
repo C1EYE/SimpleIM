@@ -1,5 +1,7 @@
 package com.c1eye.client.command;
 
+import com.c1eye.util.Logger;
+
 import java.util.Scanner;
 
 /**

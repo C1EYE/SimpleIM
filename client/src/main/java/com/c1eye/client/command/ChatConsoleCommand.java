@@ -19,6 +19,6 @@ public class ChatConsoleCommand implements BaseConsoleCommand {
 
     @Override
     public void execute(Scanner sc) {
-
+        System.out.println("");
     }
 }

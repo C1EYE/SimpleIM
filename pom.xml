@@ -6,6 +6,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>client</module>
+        <module>common</module>
     </modules>
     <groupId>com.c1eye</groupId>
     <artifactId>SIM</artifactId>
@@ -19,7 +20,7 @@
 
         <!--        <netty.version>4.0.33.Final</netty.version>-->
         <netty.version>4.1.30.Final</netty.version>
-        <protobuf.version>3.6.1</protobuf.version>
+        <protobuf.version>3.21.4</protobuf.version>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
 
@@ -34,6 +35,7 @@
     </properties>
 
     <dependencies>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
