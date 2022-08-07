@@ -1,5 +1,6 @@
 package com.c1eye.im.codec;
 
+import com.c1eye.im.bean.msg.ProtoMsg;
 import com.c1eye.im.instance.ProtoInstance;
 import com.c1eye.util.Logger;
 import io.netty.buffer.ByteBuf;
@@ -19,16 +20,18 @@ public class SimpleProtobufEncoder extends MessageToByteEncoder<ProtoMsg.Message
         encode(message, byteBuf);
     }
 
-    private void encode(ProtoMsg.Message message, ByteBuf out) {
+    public static void encode(ProtoMsg.Message message, ByteBuf out) {
         out.writeShort(ProtoInstance.MAGIC_CODE);
         out.writeShort(ProtoInstance.VERSION_CODE);
 
         // 将 ProtoMsg.Message 对象转换为byte
         byte[] bytes = message.toByteArray();
 
-        // 加密消息体
-        /*ThreeDES des = channel.channel().attr(Constants.ENCRYPT).get();
-        byte[] encryptByte = des.encrypt(bytes);*/
+        //TODO 加密消息体
+        /*
+        ThreeDES des = channel.channel().attr(Constants.ENCRYPT).get();
+        byte[] encryptByte = des.encrypt(bytes);
+        */
 
         // 读取消息的长度
         int length = bytes.length;

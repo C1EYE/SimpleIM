@@ -34,7 +34,7 @@ public class ClientSession {
     private boolean isLogin = false;
 
     /**
-     * 在连接成功之后（TCP三次握手之后）才绑定通道
+     * 创建时就绑定session
      *
      * @param channel
      */
