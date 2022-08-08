@@ -2,8 +2,8 @@ package test.cases;
 
 
 import com.c1eye.im.bean.User;
-import com.c1eye.session.ServerSession;
-import com.c1eye.session.SessionMap;
+import com.c1eye.imserver.session.ServerSession;
+import com.c1eye.imserver.session.SessionMap;
 import com.c1eye.util.JsonUtil;
 import com.c1eye.util.Logger;
 import io.netty.channel.Channel;
